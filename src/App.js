@@ -12,7 +12,14 @@ function App() {
     <div className="App">
       {/* --- HEADER --- */}
       <nav className="navbar">
-        <div className="logo">TK ADVOCATES</div>
+        <div className="brand">
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/logo/logo.png`}
+            alt="Ian Thiong'o Kiragu Advocates logo"
+            className="brand-mark"
+          />
+          <span className="brand-name">TK ADVOCATES</span>
+        </div>
         <div className="hamburger" onClick={toggleMenu}>
           {/* Simple CSS Hamburger Icon */}
           <span className="bar"></span>
@@ -92,58 +99,48 @@ function App() {
         <p className="subtitle">Comprehensive legal support for you.</p>
 
         <div className="advice-grid">
-          {/* Card 1 */}
           <div className="advice-card">
-            {/* PLACEHOLDER IMAGE */}
-            <img
-              src="https://placehold.co/600x400/D4AF37/white?text=Property"
-              alt="Property"
-            />
-            <div className="card-content">
-              <h4>Conveyancing</h4>
-              <p>
-                Guiding you through property purchases, sales and transfers.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="advice-card">
-            {/* PLACEHOLDER IMAGE */}
-            <img
-              src="https://placehold.co/600x400/D4AF37/white?text=Family"
-              alt="Family"
-            />
+            <div className="advice-icon placeholder">Icon</div>
             <div className="card-content">
               <h4>Family Law</h4>
-              <p>
-                Compassionate representation in divorce and custody matters.
-              </p>
+              <p>Compassionate representation in divorce and custody matters.</p>
             </div>
           </div>
 
-          {/* Card 3 */}
-          <div className="advice-card">
-            {/* PLACEHOLDER IMAGE */}
-            <img
-              src="https://placehold.co/600x400/D4AF37/white?text=Wills"
-              alt="Wills"
-            />
+          <div className="advice-card featured">
+            <div className="advice-icon placeholder">Icon</div>
             <div className="card-content">
-              <h4>Wills & Trusts</h4>
-              <p>
-                Securing your legacy through well-structured estate planning.
-              </p>
+              <h4>Business Law</h4>
+              <p>Clear guidance for contracts, compliance, and commercial matters.</p>
             </div>
           </div>
 
-          {/* Card 4 */}
           <div className="advice-card">
-            {/* PLACEHOLDER IMAGE */}
-            <img
-              src="https://placehold.co/600x400/D4AF37/white?text=Injury"
-              alt="Injury"
-            />
+            <div className="advice-icon placeholder">Icon</div>
+            <div className="card-content">
+              <h4>Trust & Estates</h4>
+              <p>Estate planning that secures your legacy and your loved ones.</p>
+            </div>
+          </div>
+
+          <div className="advice-card">
+            <div className="advice-icon placeholder">Icon</div>
+            <div className="card-content">
+              <h4>Civil Litigation</h4>
+              <p>Resolving disputes effectively through negotiation or the courts.</p>
+            </div>
+          </div>
+
+          <div className="advice-card">
+            <div className="advice-icon placeholder">Icon</div>
+            <div className="card-content">
+              <h4>Conveyancing</h4>
+              <p>Guiding you through property purchases, sales, and transfers.</p>
+            </div>
+          </div>
+
+          <div className="advice-card">
+            <div className="advice-icon placeholder">Icon</div>
             <div className="card-content">
               <h4>Personal Injury</h4>
               <p>Helping victims of accidents obtain fair compensation.</p>
@@ -217,13 +214,22 @@ function App() {
 
       {/* --- FOOTER --- */}
       <footer className="footer">
-        <div className="footer-content">
-          <h3>Thiong'o Kiragu & Co.</h3>
-          <p>Advocates & Commissioners for Oaths</p>
-          <p>P.O. Box 55341-00200 Nairobi</p>
-        </div>
-        <div className="copyright">
-          &copy; 2025 Thiong'o Kiragu & Co. Advocates. All rights reserved.
+        <div className="footer-inner">
+          <div className="footer-brand">
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/logo/logo.png`}
+              alt="Ian Thiong'o Kiragu Advocates logo"
+              className="footer-mark"
+            />
+            <div className="footer-text">
+              <h3>Thiong'o Kiragu & Co.</h3>
+              <p>Advocates & Commissioners for Oaths</p>
+              <p>P.O. Box 55341-00200 Nairobi</p>
+            </div>
+          </div>
+          <div className="footer-meta">
+            &copy; 2025 Thiong'o Kiragu & Co. Advocates. All rights reserved.
+          </div>
         </div>
       </footer>
     </div>
