@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/itk_advocate/static/css/main.65408a28.css",
+    "main.js": "/itk_advocate/static/js/main.245e2125.js",
+    "index.html": "/itk_advocate/index.html",
+    "main.65408a28.css.map": "/itk_advocate/static/css/main.65408a28.css.map",
+    "main.245e2125.js.map": "/itk_advocate/static/js/main.245e2125.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65408a28.css",
+    "static/js/main.245e2125.js"
+  ]
+}
