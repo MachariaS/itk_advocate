@@ -1,0 +1,36 @@
+/* --- INFO STRIP --- */
+.info-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding-bottom: 2.2rem;
+}
+
+.white-box {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+.blue-box {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .info-strip {
+    margin-top: 0;
+  }
+}

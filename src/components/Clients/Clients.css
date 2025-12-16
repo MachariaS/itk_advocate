@@ -1,0 +1,17 @@
+/* --- CLIENTS --- */
+.clients {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  font-weight: bold;
+  color: #777;
+  font-size: 1.5rem;
+}

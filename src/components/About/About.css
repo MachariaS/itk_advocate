@@ -1,0 +1,30 @@
+/* --- WHO WE ARE --- */
+.who-we-are {
+  background-color: var(--navy);
+  color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-side {
+  flex: 1;
+  padding: 4rem 2rem;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-side {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 400px;
+}

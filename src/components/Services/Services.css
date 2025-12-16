@@ -1,0 +1,106 @@
+/* --- LATEST ADVICE / SERVICES --- */
+.latest-advice {
+  padding: 6rem 2rem 4.5rem;
+  text-align: center;
+  background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%);
+  margin-top: -50px;
+}
+
+.latest-advice h2,
+.latest-advice .subtitle {
+  color: var(--navy);
+}
+
+.advice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+.advice-card {
+  background: #f7f9fb;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  color: #15243a;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.3s ease;
+}
+
+.advice-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.26);
+  background-color: var(--gold);
+}
+
+.advice-card.featured {
+  background: #1f5675;
+  color: #e9f3ff;
+}
+
+.advice-card.featured:hover {
+  background-color: var(--gold);
+  color: #15243a;
+}
+
+.advice-card.featured:hover h4 {
+  color: #15243a;
+}
+
+.advice-card.featured:hover .advice-icon {
+  border-color: rgba(21, 36, 58, 0.25);
+  color: #15243a;
+}
+
+.advice-card.featured h4 {
+  color: #ffffff;
+}
+
+.advice-card.featured .advice-icon {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.advice-icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 16px;
+  border: 2px solid rgba(21, 36, 58, 0.16);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #1f5675;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.advice-icon.placeholder {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.card-content {
+  text-align: center;
+  padding: 0;
+}
+
+.card-content h4 {
+  color: #0f1b2c;
+  margin: 0 0 0.6rem 0;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  margin: 0;
+  color: inherit;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .advice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

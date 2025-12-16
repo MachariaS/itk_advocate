@@ -1,0 +1,48 @@
+/* --- CONTACT --- */
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--light-grey);
+  color: var(--navy);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0;
+  margin-top: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-card {
+  background: var(--white);
+  color: var(--dark-grey);
+  padding: 3rem 2rem;
+  border: 1px solid #eee;
+}
+
+.contact-card.blue-card {
+  background-color: var(--navy);
+  color: var(--white);
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  border: none;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-card.blue-card {
+    transform: none;
+  }
+
+  .contact-grid {
+    gap: 20px;
+  }
+}
