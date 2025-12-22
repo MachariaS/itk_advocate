@@ -6,32 +6,38 @@ const Services = () => {
     {
       title: "Family Law",
       description: "Compassionate representation in divorce and custody matters.",
-      featured: true
+      featured: true,
+      icon: `${process.env.PUBLIC_URL}/assets/icons/defend_family.svg`
     },
     {
       title: "Business Law",
       description: "Clear guidance for contracts, compliance, and commercial matters.",
-      featured: false
+      featured: false,
+      icon: `${process.env.PUBLIC_URL}/assets/icons/business_law.svg`
     },
     {
       title: "Trust & Estates",
       description: "Estate planning that secures your legacy and your loved ones.",
-      featured: true
+      featured: true,
+      icon: `${process.env.PUBLIC_URL}/assets/icons/trust_estates.svg`
     },
     {
       title: "Civil Litigation",
       description: "Resolving disputes effectively through negotiation or the courts.",
-      featured: false
+      featured: false,
+      icon: `${process.env.PUBLIC_URL}/assets/icons/civil_law.svg`
     },
     {
       title: "Conveyancing",
       description: "Guiding you through property purchases, sales, and transfers.",
-      featured: true
+      featured: true,
+      icon: `${process.env.PUBLIC_URL}/assets/icons/real_estate.svg`
     },
     {
       title: "Personal Injury",
       description: "Helping victims of accidents obtain fair compensation.",
-      featured: false
+      featured: false,
+      icon: `${process.env.PUBLIC_URL}/assets/icons/personal_injury.svg`
     }
   ];
 
@@ -43,7 +49,9 @@ const Services = () => {
       <div className="advice-grid">
         {services.map((service, index) => (
           <div key={index} className={`advice-card ${service.featured ? 'featured' : ''}`}>
-            <div className="advice-icon placeholder">Icon</div>
+            <div className="advice-icon">
+              <img src={service.icon} alt={service.title} />
+            </div>
             <div className="card-content">
               <h4>{service.title}</h4>
               <p>{service.description}</p>

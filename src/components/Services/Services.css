@@ -77,6 +77,12 @@
   background: rgba(255, 255, 255, 0.72);
 }
 
+.advice-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
 .advice-icon.placeholder {
   font-size: 0.95rem;
   letter-spacing: 0.5px;
