@@ -17,14 +17,14 @@ const Contact = () => {
             <p>2nd Floor, Suite SF2</p>
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.062287595977!2d36.9127!3d-1.1677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTAnMDMuNyJTIDM2wrA1NCc0NS43IkU!5e0!3m2!1sen!2ske!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.035643239169!2d36.973616274248535!3d-1.1349049354778928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4795d19b248b%3A0xbcceb42d97b57c19!2sDeSoto%20Square!5e0!3m2!1sen!2ske!4v1766477594714!5m2!1sen!2ske"
                 width="100%"
                 height="200"
                 style={{ border: 0, borderRadius: '8px' }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Office Location"
+                title="Office Location - Desoto Square, Kimbo"
               ></iframe>
             </div>
           </div>
